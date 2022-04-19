@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="card">
+            <div class="content-1" id="content-1">
+                <div class="estrella margin">
+                    <img src="./images/icon-star.svg" alt="">
+                </div>
+                <div class="title margin">
+                    <h2>How did we do ?</h2>
+                </div>
+                <div class="text margin">
+                    <p>Please let us know how did with your support request. All feedback is apreciated to help us improve
+                        our offering!</p>
+                </div>
+                <div class="rating margin">
+    
+                    <input type="radio" name="rate" id="1">
+                    <label for="1">1</label>
+    
+                    <input type="radio" name="rate" id="2">
+                    <label for="2">2</label>
+    
+                    <input type="radio" name="rate" id="3">
+                    <label for="3">3</label>
+    
+                    <input type="radio" name="rate" id="4">
+                    <label for="4">4</label>
+    
+                    <input type="radio" name="rate" id="5">
+                    <label for="5">5</label>
+                </div>
+    
+                <div class="submit margin">
+                    <input type="submit" value="Submit" onclick="submit()">
+                </div>
+            </div>
+            <div id="content-2" class="content-2 no-selected">
+                <div class="thankYou margin">
+                    <img src="./images/illustration-thank-you.svg" alt="">
+                </div>
+                <div class="ratingBar margin">
+                    <p>You selected <span id="user-rate">#</span> out of 5</p>
+                </div>
+                <div class="title margin">
+                    <h2>Thank You!</h2>
+                </div>
+                <div class="text margin">
+                    <p>We apreciated you taking time to give a rating. If you ever need more support, don't heisitate to get in touch</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

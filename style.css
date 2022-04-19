@@ -1,0 +1,128 @@
+:root{
+    --naranja: hsl(25, 97%, 53%);
+
+    --blanco: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+    --circleColor:rgb(38, 47, 56);
+    --cardColor: rgb(31,38,48);
+}
+*{
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--VeryDarkBlue);
+}
+p{
+    font-size: 16px;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 1.5em;
+}
+.card{
+    border-radius: 25px;
+    background-color: var(--cardColor);
+}
+.margin{
+    margin: 1.3em;
+}
+.estrella img{
+    border: 1px solid var(--circleColor);
+    padding: 0.7em;
+    background-color: var(--circleColor);
+    border-radius: 48%;
+}
+.title{
+    color: var(--blanco);
+}
+.text{
+    color: var(--lightGrey);
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+.rating input[type="radio"]{
+    display: none;
+}
+.rating input[type="radio"] + label{
+    color: var(--lightGrey);
+    border: 1px solid var(--circleColor);
+    width: 41.38px;
+    height: 40.38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--circleColor);
+    border-radius: 50%;
+    transition: ease-in-out 200ms;
+}
+.rating input[type="radio"] + label:hover{
+    border: 1px solid var(--lightGrey);
+    background-color: var(--lightGrey);
+    color: white;
+}
+.rating input[type="radio"]:checked + label{
+    color: white;
+    border: 1px solid var(--naranja);
+    background-color: var(--naranja);
+}
+.submit input{
+    width: 100%;
+}
+.submit input{
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: ease-in-out 200ms;
+}
+.submit input:active{
+    background-color: var(--blanco);
+    color:var(--naranja);
+}
+.submit input:hover{
+    background-color: var(--blanco);
+    color:var(--naranja);
+}
+@media (min-width: 437px) {
+  .card{
+      width: 371px;
+  }
+}
+
+.content-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ratingBar p{
+    background-color: var(--circleColor);
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-top: -20px;
+    color: var(--naranja);
+}
+.content-2 .title h2, .content-2 .text p{
+    text-align: center;
+}
+.content-2 .text{
+    margin-top: -10px;
+}
+.no-selected{
+    display: none;
+}
